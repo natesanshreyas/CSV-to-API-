@@ -8,8 +8,8 @@ def csv_to_api():
     df = pd.read_csv('./seeding.csv') #converting PDF to dataframe, making it easier to read
     df.columns = df.columns.str.strip() #preventing whitespace from throwing off results
 
-    token = 'v8VpPb5Wl3msM9fERsaG*Q))' #access token, used to authenticate into API. Make sure to replace this with the access token that you generate following the instructions in the Readme
-    key = 'RWTwPJoVDdPQy8GzMkdKsQ((' #API key, used to authenticate into API
+    token = '' #access token, used to authenticate into API. Make sure to replace this with the access token that you generate following the instructions in the Readme
+    key = '' #API key, used to authenticate into API
 
     headers = { #converting token and key into headers 'X-API-Access-Token' and 'X-API-Key'. It's necessary to seperate out the headers in this format in order to successfully make the API call
         'X-API-Access-Token': token,
